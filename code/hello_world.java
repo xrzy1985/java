@@ -1,40 +1,24 @@
-/*
-James Patterson - Java Tutorial - Hello World
-Problem:
-  Take 3 inputs, integer values, from the user, and
-  print those 3 out on their own individual lines
+//Inside java, everything is a class or an object
+//public class defines all the attributes, variables,
+//data structures, functions, methods, or additional functionality
+//public means everyone should be able to access it
 
-1: A lot of coding
-2: simplified
-
-Finally, a look at which I would personally choose.
-
-*/
-import java.util.*;
-
-public class Solution
+public class HelloWorld
 {
+	// public allows all classes to use this function
+	// static only a class can call for this function, variable, etc to execute
+	// the class main will be called/used by helloWorld
+	// void means the function does not return any values when execution is finished
+	// (String[]args) means every main function must accept an array of string objects
 
-    public static void main(String[] args)
-    {
-        Scanner scan = new Scanner(System.in);
-        int a = scan.nextInt();
-        int b = scan.nextInt();
-        int c = scan.nextInt();
-        scanner.close();
+	// the static variable will be able to be used by the main function since its static
+	// the string gamerTag holds the string of characters xRzy
 
-        System.out.println(a + "\n" + b + "\n" + c);
+	static String hackerTag = "xRzy";
 
-        /*
-          Alternatively, the following code would be more compact, and save
-          space, if space was an issue. I almost prefer my code to be written
-          out with longivity. So, I can follow along with it easier. 
+	public static void main(String[] args)
+	{
+        System.out.println("Hello World, my name is " + hackerTag + ".");
+	}
 
-          Scanner scan = new Scanner(System.in);
-          int a = scan.nextInt(); int b = scan.nextInt(); int c = scan.nextInt();
-          System.out.println(a + "\n" + b + "\n" + c);
-
-        */
-
-    }
 }
